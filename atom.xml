@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-23T12:19:23.000Z</updated>
+  <updated>2017-03-24T10:42:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://yoursite.com/2017/03/23/Tensorflow/"/>
     <id>http://yoursite.com/2017/03/23/Tensorflow/</id>
     <published>2017-03-23T06:35:43.000Z</published>
-    <updated>2017-03-23T12:19:23.000Z</updated>
+    <updated>2017-03-24T10:42:48.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Step-0"><a href="#Step-0" class="headerlink" title="Step 0"></a>Step 0</h2><p>   You need to download Anaconda from website.You want to install this package manually with origin python enviorment on macOS or windows , but as you know it may cost you much time to reach this goal.So anaconda is better choice for us. What is Anaconda ? Anaconda (“Anaconda Distribution”) is a free, easy-to-install package manager,environment manager, Python distribution, and collection of over 720 open source packages with free community support. Hundreds more open source packages and their dependencies can be installed with a simple ‘conda install [packagename]’. It’s platform-agnostic, can be used on Windows, OS X and Linux. Or even easier, with new Anaconda Navigator for point and click install of environments and packages! You can visit their websit and get install package for your system.I downlod Anaconda 3.6(python36) from <a href="https://www.continuum.io/downloads" target="_blank" rel="external">https://www.continuum.io/downloads</a>. The page may like this</p>
-<p><img src="https://thumbnail0.baidupcs.com/thumbnail/72ae279612d1c1bd6a70bb53e01951c6?fid=4245569876-250528-741924171407182&amp;time=1490252400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-6tuo5dEiwOA0TcA0J5CQ3NIBj3A%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1893845569319690749&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
-<p>This installation is simple.My os is macOs. After installing python3.6 on my Macbook Pro, default  install path for mac is  ~/anaconda/. Because there are python environments in macOS. After installing Anaconda, you need to ensure it works successfully on your machine.Some command line blow may help.Open a teminal and enter:</p>
+    <content type="html"><![CDATA[<p>In this tutorial, we are goning to introduce how to install TensorFlow on macOS. TensorFlow is an open source software library for machine learning across a range of tasks, and developed by Google to meet their needs for systems capable of building and training neural networks to detect and decipher patterns and correlations, analogous to the learning and reasoning which humans use.</p>
+<h2 id="Step-0"><a href="#Step-0" class="headerlink" title="Step 0"></a>Step 0</h2><p>   We need to download Anaconda from websites.<br><img src="https://thumbnail0.baidupcs.com/thumbnail/72ae279612d1c1bd6a70bb53e01951c6?fid=4245569876-250528-741924171407182&amp;time=1490252400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-6tuo5dEiwOA0TcA0J5CQ3NIBj3A%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1893845569319690749&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
+<p>This installation is simple. My os is macOs. After installing python3.6 on my Macbook Pro, default  install path for mac is  ~/anaconda/. Because there are python environments in macOS. After installing Anaconda, we need to ensure it works successfully on our machine. Some command line blow may help.Open a teminal and enter:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">which</span> python</div></pre></td></tr></table></figure>
 <p><img src="https://thumbnail0.baidupcs.com/thumbnail/66e761bc0862d184e84bcb189e6cb40d?fid=4245569876-250528-952413133677490&amp;time=1490252400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-GjyHQvm9NvuoaUrGVJb7wmBg02w%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1893821950753334178&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ python</div></pre></td></tr></table></figure>
@@ -33,23 +33,24 @@
 <p><img src="https://thumbnail0.baidupcs.com/thumbnail/c07cc403239d781f603eb2f21b83cfde?fid=4245569876-250528-842302824423688&amp;time=1490256000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-oW85OneK4D6dcpUPDs24IlxcO4s%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894416235802680009&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
 <h2 id="step2"><a href="#step2" class="headerlink" title="step2"></a>step2</h2><p>Now you can switch to the new environment by running the following (on Linux/Mac):<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> activate tf</div></pre></td></tr></table></figure></p>
 <p><img src="https://thumbnail0.baidupcs.com/thumbnail/ed31b5bc2dead4eafa04f021df0fa6ac?fid=4245569876-250528-948440053103427&amp;time=1490256000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pw6AIC80vgxkGWsA3WnbOWY5kbw%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894206831066039172&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
-<h2 id="step3"><a href="#step3" class="headerlink" title="step3"></a>step3</h2><p>Some dependencies are need.You can install them by using command “conda”.For  example, if you want to install package ‘pillow, you would do as blow.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda install pillow</div></pre></td></tr></table></figure></p>
-<p><img src="https://thumbnail0.baidupcs.com/thumbnail/500fdb66e66ba48d88177f5f3bc1bee2?fid=4245569876-250528-544847916655405&amp;time=1490256000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-t%2Bzjuzu4ccLJgXa9hhrkb%2Bl8WqQ%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894265154414025825&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""><br>Despite ‘pillow’ require other packages, conda will install them automatically.You can install ’scipy’  ‘matplotlib’ ’numpy’ and other packages in same way.</p>
+<h2 id="step3"><a href="#step3" class="headerlink" title="step3"></a>step3</h2><p>Some dependencies are need. You can install them by using command “conda”.For  example, if you want to install package ‘pillow, you would do as blow.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda install pillow</div></pre></td></tr></table></figure></p>
+<p><img src="https://thumbnail0.baidupcs.com/thumbnail/500fdb66e66ba48d88177f5f3bc1bee2?fid=4245569876-250528-544847916655405&amp;time=1490256000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-t%2Bzjuzu4ccLJgXa9hhrkb%2Bl8WqQ%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894265154414025825&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""><br>Despite ‘pillow’ require other packages, conda will install them automatically. You can install ’scipy’  ‘matplotlib’ ’numpy’ and other packages in same way.</p>
 <h2 id="step4"><a href="#step4" class="headerlink" title="step4"></a>step4</h2><p>Now you can install TensorFlow. It is now possible to install the CPU-version of TensorFlow directly using pip. We also need the PrettyTensor add-on package so we install that as well:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda install tensorflow prettytensor</div></pre></td></tr></table></figure></p>
 <p><img src="https://thumbnail0.baidupcs.com/thumbnail/3362cead02969c1646023d0a83c0eabf?fid=4245569876-250528-354507883054544&amp;time=1490252400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-MpypNfzUxalSCJj%2Bv%2BQctE73uXY%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894057103713421552&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
 <h2 id="stpe5"><a href="#stpe5" class="headerlink" title="stpe5"></a>stpe5</h2><p>Now let us write ‘Hello world!’ as blow!</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</div><div class="line">hello = tf.constant(<span class="string">'Hello TensorFlow'</span>)</div><div class="line">sess  = tf.Session()</div><div class="line"><span class="keyword">print</span> (sess.run(hello))</div></pre></td></tr></table></figure>
 <p><img src="https://thumbnail0.baidupcs.com/thumbnail/0c4c11515027602437dc353be2cc20ba?fid=4245569876-250528-395771692850068&amp;time=1490256000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-iCxR%2FXEnoViL8VMkj2387ArE8%2Fc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1894321959024231626&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100" alt=""></p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://en.wikipedia.org/wiki/TensorFlow" target="_blank" rel="external">https://en.wikipedia.org/wiki/TensorFlow</a><br><a href="https://www.continuum.io/downloads" target="_blank" rel="external">https://www.continuum.io/downloads</a>.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Step-0&quot;&gt;&lt;a href=&quot;#Step-0&quot; class=&quot;headerlink&quot; title=&quot;Step 0&quot;&gt;&lt;/a&gt;Step 0&lt;/h2&gt;&lt;p&gt;   You need to download Anaconda from website.You want
+      &lt;p&gt;In this tutorial, we are goning to introduce how to install TensorFlow on macOS. TensorFlow is an open source software library for machin
     
     </summary>
     
     
-      <category term="Deeplearning" scheme="http://yoursite.com/tags/Deeplearning/"/>
+      <category term="Deep learning" scheme="http://yoursite.com/tags/Deep-learning/"/>
     
   </entry>
   
