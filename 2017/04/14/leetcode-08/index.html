@@ -3,15 +3,15 @@
 <h2 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h2><p>Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.</p>
 <h2 id="Acceptance"><a href="#Acceptance" class="headerlink" title="Acceptance"></a>Acceptance</h2><p><strong>13.6%</strong></p>
 <h2 id="Difficulty"><a href="#Difficulty" class="headerlink" title="Difficulty"></a>Difficulty</h2><p>Middle</p>
-<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>The key issue of this problem is its input which is various. We need to take count of some cases whcih can be categorized as blow</p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>The key issue of this problem is its input which is various. We need to take into account of some cases whcih can be categorized as blow</p>
 <ol>
 <li><p>Empty string. If the input is empty, we need return 0;</p>
 </li>
-<li><p>Sign. There are about three cases: ‘+’, ‘-‘, ‘digit’. ‘+’ and ‘digit’  means that input is a positive number. And ‘-‘ means it is negative.<br>when we receive a input, we should identify sign:  positive 1 and negative -1.</p>
+<li><p>Sign. There are about three cases: ‘+’, ‘-‘, ‘digit’. ‘+’ and ‘digit’  mean that input is a positive number. And ‘-‘ means it is negative. when we receive a input, we should identify sign:  positive 1 and negative -1.</p>
 </li>
-<li><p>Value. It is easy to get acsill code of a digit. In python language, <strong>ord()</strong> is designed for this task. We can use diff of ‘digit’ - ‘0’ to get the value of string.<br>Calculating step by step,  we can get real value of input. And as output, we need add sign for this value.</p>
+<li><p>Value. It is easy to get acsill code of a digit. In python language, <strong>ord()</strong> is designed for this task. We can use diff of ‘digit’ - ‘0’ to get the value of string.Calculating step by step,  we can get real value of input. And as output, we need add sign for this value.</p>
 </li>
-<li><p>Overflow. we need to ensure our output is in range of ‘long’ type in C++. In python, ‘long’ type isn’t existing so we try to calculat this range. The interval of long type is -2147483648 ~ 2147483647. Let us ensure our ouput is in this interval.</p>
+<li><p>Overflow. we need to ensure our output is in range of ‘long’ type in C++. In python, ‘long’ type isn’t existing so we try to calculate this range. The interval of long type is -2147483648 ~ 2147483647. Let us ensure our output is in this interval.</p>
 </li>
 <li><p>Illegal input. If some illegal symbol in input, we return 0. However. For case ‘+-123’ , it is illegal as well. For some alpha mixed in string like ‘1234b11’, we should only consider ‘1234’</p>
 </li>
